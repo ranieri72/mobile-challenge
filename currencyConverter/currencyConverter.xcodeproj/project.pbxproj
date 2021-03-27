@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40B1065260D5BDB00004BD5 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B1064260D5BDB00004BD5 /* NetworkConstants.swift */; };
+		F42638D3260F9DF00054C1D4 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42638D2260F9DF00054C1D4 /* NetworkTarget.swift */; };
 		F43CAE15260949D900BB9B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE14260949D900BB9B31 /* AppDelegate.swift */; };
 		F43CAE17260949D900BB9B31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE16260949D900BB9B31 /* SceneDelegate.swift */; };
 		F43CAE1E260949DA00BB9B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43CAE1D260949DA00BB9B31 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 		F43CAE37260949DA00BB9B31 /* currencyConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE36260949DA00BB9B31 /* currencyConverterUITests.swift */; };
 		F43CAE5426094CD600BB9B31 /* ConversionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE5326094CD600BB9B31 /* ConversionController.swift */; };
 		F43CAE5C26094CE800BB9B31 /* ConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE5B26094CE800BB9B31 /* ConversionView.swift */; };
+		F43CAE7126095D5100BB9B31 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE7026095D5100BB9B31 /* NetworkRequest.swift */; };
+		F43CAE7A26095FA300BB9B31 /* CurrenciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43CAE7926095FA300BB9B31 /* CurrenciesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40B1064260D5BDB00004BD5 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		F42638D2260F9DF00054C1D4 /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
 		F43CAE11260949D800BB9B31 /* currencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = currencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43CAE14260949D900BB9B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43CAE16260949D900BB9B31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		F43CAE38260949DA00BB9B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F43CAE5326094CD600BB9B31 /* ConversionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionController.swift; sourceTree = "<group>"; };
 		F43CAE5B26094CE800BB9B31 /* ConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionView.swift; sourceTree = "<group>"; };
+		F43CAE7026095D5100BB9B31 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		F43CAE7926095FA300BB9B31 /* CurrenciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		F43CAE13260949D800BB9B31 /* currencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				F43CAE7826095F7500BB9B31 /* Model */,
+				F43CAE6F26095D0100BB9B31 /* Network */,
 				F43CAE5126094CAB00BB9B31 /* Features */,
 				F43CAE4D26094C0100BB9B31 /* SupportFiles */,
 			);
@@ -150,6 +160,24 @@
 				F43CAE5B26094CE800BB9B31 /* ConversionView.swift */,
 			);
 			path = Conversion;
+			sourceTree = "<group>";
+		};
+		F43CAE6F26095D0100BB9B31 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F43CAE7026095D5100BB9B31 /* NetworkRequest.swift */,
+				F40B1064260D5BDB00004BD5 /* NetworkConstants.swift */,
+				F42638D2260F9DF00054C1D4 /* NetworkTarget.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F43CAE7826095F7500BB9B31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F43CAE7926095FA300BB9B31 /* CurrenciesList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,10 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40B1065260D5BDB00004BD5 /* NetworkConstants.swift in Sources */,
 				F43CAE5C26094CE800BB9B31 /* ConversionView.swift in Sources */,
 				F43CAE5426094CD600BB9B31 /* ConversionController.swift in Sources */,
 				F43CAE15260949D900BB9B31 /* AppDelegate.swift in Sources */,
 				F43CAE17260949D900BB9B31 /* SceneDelegate.swift in Sources */,
+				F43CAE7A26095FA300BB9B31 /* CurrenciesList.swift in Sources */,
+				F43CAE7126095D5100BB9B31 /* NetworkRequest.swift in Sources */,
+				F42638D3260F9DF00054C1D4 /* NetworkTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
